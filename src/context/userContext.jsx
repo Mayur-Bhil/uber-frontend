@@ -11,13 +11,13 @@ const userContext = ({children}) => {
         email:"",
         password:"",
     })
-    const [captain, setCaptain] = useState({})
+
 
   
 
   return (
     <div>
-        <UserDataContext.Provider value={{user,setUser,captain,setCaptain}}>
+        <UserDataContext.Provider value={{user,setUser}}>
            {children}
         </UserDataContext.Provider>
     </div>
