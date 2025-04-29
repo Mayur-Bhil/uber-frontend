@@ -1,17 +1,33 @@
-import React, { useState } from "react";
+import React, { useState ,useContext} from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import {CaptainDataContext} from "../context/captainContext";
 
 const CaptainLogin = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [CaptainData,setCaptainData] = useState({});
+    const navigate = useNavigate();
 
-    const submitHandler = (event) => {
+    const {captain, setcaptain} = useContext(CaptainDataContext);
+
+    const submitHandler = async(event) => {
         event.preventDefault();
-        setCaptainData({
+        const captaindata = {
             email: email,
             password: password,
-        });
+        }
+
+        const responce = await axios.post(`${import.meta.env.VITE_BASE_URL}/captains/login`,captaindata)  
+        if(responce.status === 200){
+          const data = responce.data;
+            setcaptain(data.captain); 
+            localStorage.setItem("token",data.token);
+            alert("Captain Logged in Successfully")
+            navigate("/captains/home")
+        }else{
+            alert("Invalid Credentials")
+        }
         setEmail("");
         setPassword("");
         
@@ -38,7 +54,7 @@ const CaptainLogin = () => {
         <button className="bg-white text-black py-3 px-8 text-sm  font-bold rounded-full mt-3 mb-4" type="submit">Login</button>
         <div className="flex justify-center items-center gap-2 mb-4">
           <p className="text-blue-600">
-          Don't have an account? <Link className="text-white" to={"/captains/signup"}>Register as Captain</Link>
+          Don't have an account? <Link className="text-white" to={"/captains/register"}>Register as Captain</Link>
         </p>
       </div>
       </form>

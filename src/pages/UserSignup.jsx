@@ -10,7 +10,7 @@ const UserSignup = () => {
   const [lastname, setLastName] = useState("");  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [userData, setUserData] = useState({});
+ 
 
   const navigate = useNavigate();
 
@@ -34,8 +34,8 @@ const UserSignup = () => {
       setUser(data.user);
       localStorage.setItem("token",data.token);
 
-      navigate("/home")
       alert("User created successfully")
+      navigate("/home")
      } else{
       alert("User already exists")
     }

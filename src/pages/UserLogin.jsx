@@ -22,8 +22,8 @@ const UserLogin = () => {
         const data = response.data;
         setUser(data.user);
         localStorage.setItem("token",data.token);
-        navigate("/home")
         alert("Login successfully")
+        navigate("/home")
        } else{
         alert("Login failed");
       }
