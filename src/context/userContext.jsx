@@ -5,8 +5,8 @@ export const UserDataContext = React.createContext()
 const userContext = ({children}) => {
     const [user, setUser] = useState({
         fullname:{
-            firstName:"",
-            lastName:"",
+            firstname:"",
+            lastname:"",
         },
         email:"",
         password:"",

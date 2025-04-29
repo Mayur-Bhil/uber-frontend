@@ -26,9 +26,11 @@ function App() {
             <Route path='/users/signup' element={<UserSignup/>}/>
             <Route path='/captains/login' element={<CaptainLogin/>}/>
             <Route path='/captains/signup' element={<CaptainSignup/>}/>
-            <Route path='/users/logout' element={<UserProtectedWrapper>
-               <UserLogout/>
-            </UserProtectedWrapper>}></Route>
+            <Route path='/users/logout' element={
+                    <UserProtectedWrapper>
+                          <UserLogout/>
+                    </UserProtectedWrapper>}>
+            </Route>
       </Routes>
     </div>
   )
