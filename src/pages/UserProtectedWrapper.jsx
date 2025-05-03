@@ -14,6 +14,8 @@ useEffect(()=>{
     if(!token){
         alert("You are not logged in")
         // navigate("/users/login")
+    }else{
+      navigate("/home")
     }
 },[token])
 
