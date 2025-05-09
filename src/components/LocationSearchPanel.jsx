@@ -20,7 +20,7 @@ console.log(props);
                     onClick={()=>{
                         props.setvehiclepanel(true)
                         props.setPanelOpen(false)
-                    }} className='flex items-center bg-zinc-100 border-2 p-2 active:border-lime-800 justify-start my-6 font-medium  rounded-xl p-'>
+                    }} className='flex  items-center bg-zinc-100 border-2 p-2 active:border-lime-800 justify-start my-6 font-medium  rounded-xl p-'>
                     <h2 className='ml-1 w-10 relative flex items-center justify-center pr-3'><img className='rounded-full' src="https://img.freepik.com/premium-vector/golf-academy-gps-shape-concept-logo-vector-icon_617472-5034.jpg?ga=GA1.1.269566283.1746250475&semt=ais_hybrid&w=740" alt="" /></h2>
                     <h4>{elem}</h4>
                 </div>

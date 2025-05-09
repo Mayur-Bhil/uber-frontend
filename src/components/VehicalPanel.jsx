@@ -47,7 +47,7 @@ const VehicalPanel = (props) => {
                                 <h2>₹193.25</h2>
                           </div>
                           <div onClick={()=>{
-                                props.setvehiclepanel()
+                                props.setconfermRidePanel(true)
                           }} className='flex border-2 p-2 border-black my-5 items-center justify-between active:border-sky-300 rounded-xl'>
                                  <img className='h-11 rounded-xl' src="https://imgs.search.brave.com/pum6VIOXW1rFbKEeEww-waTPesys4iCwcevE7T-Y5iA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzEyLzA2LzU1LzE4/LzM2MF9GXzEyMDY1/NTE4MTRfcHRNUGhX/bElRbHZnQUxRdk44/QnhTTUx5R1JaMlI5/dTguanBn" alt="" />   
                                 <div className='ml-2 mrl-2'>
