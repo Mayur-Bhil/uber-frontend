@@ -1,20 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const CaptainsHome = () => {
+const Riding = () => {
   return (
     <div className="h-screen">
-  <div className='p-3 fixed'>
-      <img 
-      className=" w-10 "
-      src="https://imgs.search.brave.com/PiLzChZktPfYegm5ohd3F_Z8ZtZFbs0taj14PlBcBB0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMTMvVWJl/ci1Mb2dvLVBORy1J/bWFnZS5wbmc" alt="" />
       <Link
         to={"/home"}
-        className="fixed h-10 w-10 bg-black text-white flex right-2 top-2 font-medium cursor-pointer items-center justify-center bg-center rounded-full "
-        >
+        className="fixed h-10 w-10 bg-black text-white flex  top-2 left-2 font-medium cursor-pointer items-center justify-center bg-center rounded-full "
+      >
         <i class="ri-home-9-fill"></i>
       </Link>
-    </div> 
       <div className="h-1/2">
         <img
           className="h-full w-full object-cover "
@@ -74,7 +69,7 @@ const CaptainsHome = () => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CaptainsHome
+export default Riding;

@@ -7,7 +7,7 @@ const LookingForDriver = (props) => {
             props.setvehicalFound(false)
 
         }}> <i  className="ri-arrow-down-wide-line"></i></h5>
-        <h3 className='text-2xl font-semibold mb-5 '>Looking for driver</h3>
+        <h3 className='text-2xl font-semibold mb-5 '>Looking for a driver</h3>
         <div className='flex gap-2 flex-col justify-center items-center'>
         <img className='h-26' src="https://imgs.search.brave.com/D6W9rtW5V6wBy01_4nV3_-bQL1BupTU_-aT6q433o7k/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAzLzAzLzMwLzA5/LzM2MF9GXzMwMzMw/MDk4Ml9NQ0swRndp/UzBlQ3ZWenZ0QTRB/d0k1MHVsRVFzOW95/TS5qcGc" alt="" />   
 

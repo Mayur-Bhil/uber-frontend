@@ -93,7 +93,7 @@ const waitforDriverRef = useRef(null)
         })
     }else{
         gsap.to(waitforDriverRef.current,{
-            transform:'translateY(100%)'
+            transform:'translateY(100%)' 
         })
     }
   },[waitforDriver])
@@ -147,9 +147,9 @@ const waitforDriverRef = useRef(null)
                    <ConferrmedRide setvehicalFound={ setvehicalFound } setconfermRidePanel={setconfermRidePanel}/>
             </div>
 
-            
+           
             <div ref={ vehicalFoundRef } className='fixed z-10 bottom-0 bg-white pt-12 p-5 w-full translate-y-full'>
-                <LookingForDriver  setwaitforDriver={setwaitforDriver} setvehicalFound={ setvehicalFound }/>
+                <LookingForDriver setvehicalFound={ setvehicalFound }/>
             </div>
 
             <div ref={waitforDriverRef}  className='fixed z-10 bottom-0 bg-white pt-12 p-5 w-full '>
