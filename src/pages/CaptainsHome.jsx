@@ -15,63 +15,40 @@ const CaptainsHome = () => {
         <i class="ri-home-9-fill"></i>
       </Link>
     </div> 
-      <div className="h-1/2">
-        <img
-          className="h-full w-full object-cover "
+    <div className="h-1/2">
+            <img className="h-full w-full object-cover "
           src="https://images.squarespace-cdn.com/content/v1/5a05f520f6576e6135323430/1570233092180-KY4SR5HLAZ42H8UF73IF/v3.png"
-          alt=""
-        />
-      </div>
-      <div className="h-1/2 p-4">
-        <div className="flex gap-2 justify-between items-center">
-          <div className="flex tracking-tighter items-center">
-            <img
-              className="h-14 w-14 bg-cover rounded-full "
-              src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fG1hbGV8ZW58MHx8MHx8fDA%3D"
-              alt=""
-            />
-            <img
-              className="h-18 w-18 bg-cover rounded-full"
-              src="https://imgs.search.brave.com/D6W9rtW5V6wBy01_4nV3_-bQL1BupTU_-aT6q433o7k/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAzLzAzLzMwLzA5/LzM2MF9GXzMwMzMw/MDk4Ml9NQ0swRndp/UzBlQ3ZWenZ0QTRB/d0k1MHVsRVFzOW95/TS5qcGc"
-              alt=""
-            />
+          alt="" />
+    </div>
+      <div className="h-1/2">
+        <div className='flex items-center justify-between p-4'>
+          <div className='flex items-center justify-between  p-5' >
+              <img className='h-18 w-18 rounded-full  object-cover' src="https://images.unsplash.com/photo-1712847333437-f9386beb83e4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aHVtYW58ZW58MHx8MHx8fDA%3D" alt="" />
+              <h4 className='ml-2'>Harsh  patel</h4>   
           </div>
-          <div>
-            <h2 className="text-lg font-medium">Mayur Bhil</h2>
-            <h4 className="text-xl font-semibold -mt-2">SR05 4295</h4>
-            <p className="text-sm text-gray-600 -mt-2">Maruti Suzuki </p>
+          <div className=''>
+            <h4>295.20</h4>
+            <p className='text-sm p-3 rounded-xl bg-gray-600'>Earned</p>
           </div>
         </div>
-        <div className="flex gap-2 flex-col justify-center items-center">
-          <div className="w-full my-5">
-            <div className="flex items-center gap-4 my-2 border-b-[0.7px] border-black">
-              <i className="text-lg ri-map-pin-fill"></i>
-              <div>
-                <h3 className="text-lg font-medium">562/11-A </h3>
-                <p className="text-base text-gray-600">
-                  Kakariya Talv,Ahemedabad
-                </p>
-              </div>
+        <div className='flex justify-center gap-4 items-start bg-gray-300 rounded-2xl'>
+            <div className='text-cenetr'>
+                <i className="text-2xl font-thin  ri-timer-flash-line"></i>
+                <h5 className='text-lg font-medium'>10.2</h5>
+                <p className='text-sm text-gray-600'>hours Online</p>
             </div>
-            <div className="flex items-center gap-4 my-2  border-black">
-              <i className="text-lg ri-map-pin-fill"></i>
-              <div>
-                <h3 className="text-lg font-medium">₹193.20 </h3>
-                <p className="text-base text-gray-600">
-                  GPay , Phone pe , amazon , whatsapp
-                </p>
-              </div>
+            <div className='text-cenetr'>
+                <i className="text-2xl font-thin  ri-speed-up-fill"></i>
+                <h5 className='text-lg font-medium'>10.2</h5>
+                <p className='text-sm text-gray-600'>hours Online</p>
             </div>
-          </div>
+            <div className='text-cenetr'>
+                <i className="text-2xl font-thin ri-booklet-line"></i>
+                <h5 className='text-lg font-medium'>10.2</h5>
+                <p className='text-sm text-gray-600'>hours Online</p>
+            </div>
+
         </div>
-        <button
-          onClick={() => {
-            console.log("Ride Confirmed");
-          }}
-          className="w-full bg-green-500 rounded-xl font-semibold text-white "
-        >
-          Make payment
-        </button>
       </div>
     </div>
   )
