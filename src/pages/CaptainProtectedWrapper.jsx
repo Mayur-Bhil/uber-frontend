@@ -14,7 +14,7 @@ const token = localStorage.getItem("token")
 useEffect(()=>{
     if(!token){
         alert("You are not logged in")
-        navigate("/captains/login")
+        // navigate("/captains/login")
     }
 },[token])
 
@@ -31,7 +31,7 @@ axios.get(`${import.meta.env.VITE_BASE_URL}/captains/profile`,{
 }).catch((error)=>{
     setIsLodding(true)
     localStorage.removeItem("token")
-    // navigate("/captains/login")
+    navigate("/captains/login")
 })
 
 if(isLodding){
