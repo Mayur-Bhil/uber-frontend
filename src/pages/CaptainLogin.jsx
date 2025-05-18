@@ -23,6 +23,7 @@ const CaptainLogin = () => {
           const data = responce.data;
             setcaptain(data.captain); 
             localStorage.setItem("token",data.token);
+            
             alert("Captain Logged in Successfully")
             navigate("/captains/home")
         }else{

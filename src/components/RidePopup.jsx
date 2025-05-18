@@ -7,7 +7,7 @@ const RidePopup = (props) => {
             props.setRidePopPanel(false)
 
         }}> <i  className="ri-arrow-down-wide-line"></i></h5>
-        <h3 className='text-2xl font- p-2 semibold '>New Ride Awilable</h3>
+        <h3 className='text-2xl font- p-2 semibold '>New Ride Aavilable</h3>
         <div className='flex items-center justify-between bg-violet-200 p-2 rounded-xl'>
             <div className='flex justify-betwee gap-5 items-center '>
                 <img className="h-18 w-18 rounded-full  object-cover" alt="" src="https://images.unsplash.com/photo-1548637724-cbc39e0c8d3b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmVhdXRpZnVsJTIwd29tYW58ZW58MHx8MHx8fDA%3D"/>
@@ -41,13 +41,16 @@ const RidePopup = (props) => {
                 </div>
 
         </div>
+        <div className='flex w-full gap-4 justify-between items-center'>
+
         <button onClick={()=>{
-           
-        }} className='w-full bg-green-500 rounded-xl  p-2 font-semibold text-white '>Conferm !</button>
+            props.setConfirmRidePopPanel(true)
+        }} className='w-full bg-green-500 rounded-xl  p-2 font-semibold text-white active:scale-90 transition duration-150  '>Accept </button>
 
         <button onClick={()=>{
             props.setRidePopPanel(false)
-        }} className='w-full bg-orange-200 rounded-xl p-2  font-semibold text-pink-400 '>ignore !</button>
+        }} className='w-full bg-orange-200 rounded-xl p-2  font-semibold text-pink-400 active:scale-90 transition duration-150 '>ignore </button>
+            </div>
         </div>
     </div>
   )

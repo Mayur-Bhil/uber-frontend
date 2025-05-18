@@ -10,7 +10,7 @@ const CaptainDetailes = () => {
               <h4 className='ml-2'>Harsh  patel</h4>   
           </div>
           <div className=''>
-            <h4>295.20</h4>
+            <h4>₹295.20</h4>
             <p className='text-sm p-3 rounded-xl bg-gray-600'>Earned</p>
           </div>
         </div>
